@@ -7,6 +7,11 @@ import Login from "./pages/Login";
 import Layout from "./components/Layout";
 import Dashboard from "./pages/Dashboard";
 import Departments from "./pages/Departments";
+import BudgetTypes from "./pages/BudgetTypes";
+import Budgets from "./pages/Budgets";
+import CashFlowTypes from "./pages/CashFlowTypes";
+import CashFlows from "./pages/CashFlows";
+import Transactions from "./pages/Transactions";
 import NotFound from "./pages/NotFound";
 import { AuthService } from "./lib/auth";
 
@@ -32,6 +37,11 @@ const App = () => (
           }>
             <Route path="dashboard" element={<Dashboard />} />
             <Route path="departments" element={<Departments />} />
+            <Route path="budget-types" element={<BudgetTypes />} />
+            <Route path="budgets" element={<Budgets />} />
+            <Route path="cash-flow-types" element={<CashFlowTypes />} />
+            <Route path="cash-flows" element={<CashFlows />} />
+            <Route path="transactions" element={<Transactions />} />
           </Route>
           <Route path="*" element={<NotFound />} />
         </Routes>
